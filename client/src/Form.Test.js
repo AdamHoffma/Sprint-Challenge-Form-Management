@@ -8,5 +8,6 @@ it('renders a button with the text submit', () => {
     const wrapper = rtl.render(
         <ThisForm/>
     )
-    console.log(wrapper.debug())
+    const element = wrapper.queryByText(/username/i)
+    expect(element).toBeVisible()
 })

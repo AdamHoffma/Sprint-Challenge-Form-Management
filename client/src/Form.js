@@ -10,7 +10,7 @@ const ThisForm = ({errors, touched, handleSubmit, values, status}) => {
 
     useEffect(() => {
         if (status) {
-            setUsers([...users, status])
+            setUsers(status)
         }
     },[status])
     console.log("users", users)
